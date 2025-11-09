@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Collaboration</title>
+
+    <!-- pdf -->
+    <script src='//static.anyflip.com/plugin/LightBox/js/anyflp-light-box-api-min.js'></script>
+
+    <!-- ICON -->
+    <link rel="icon" href="assets/image/icon/logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+        <!-- START NAVBAR -->
+    <nav>
+        <div class="logo">
+            <img src="assets/image/icon/logo.png" alt="" />
+            <span>Media Partner</span>
+        </div>
+        <div class="menu-icon" id="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="hidden" id="menu-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="index.html">T&C Media Partner</a></li>
+            <li><a href="#kerjasama">Ajukan Kerja Sama</a></li>
+        </ul>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- formpengajuan -->
+     <div class="form-section" id="kerjasama"+------------------------------------------------------->
+        <div class="form-header">
+            <svg width="64" height="4" viewBox="0 0 64 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="63.4943" height="3.38925" fill="white"/>
+            </svg>
+            <h1>Form Pengajuan Media Partner</h1>
+        </div>
+        <div class="form-container">
+            <form>
+            <div class="input-row">
+                <input type="email" placeholder="Masukan alamat email anda" required>
+                <input type="tel" placeholder="Masukkan nomor telepon anda" required>
+            </div>
+            <input type="text" placeholder="Masukan alamat asal instansi" required>
+            <input type="text" placeholder="Masukan link google drive bahan yang akan di publish" required>
+
+            <div class="upload-area">
+                <svg width="66" height="51" viewBox="0 0 66 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.3 0H22.275L28.4625 4.78125H62.7C63.5752 4.78125 64.4146 5.11708 65.0335 5.71485C65.6523 6.31262 66 7.12337 66 7.96875V47.8125C66 48.6579 65.6523 49.4686 65.0335 50.0664C64.4146 50.6642 63.5752 51 62.7 51H3.3C2.42479 51 1.58542 50.6642 0.966547 50.0664C0.347677 49.4686 0 48.6579 0 47.8125V3.1875C0 2.34212 0.347677 1.53137 0.966547 0.933598C1.58542 0.335826 2.42479 0 3.3 0ZM4.95 15.9375V20.7188H61.05V15.9375H4.95Z" fill="white"/>
+                </svg>
+                <p>Seret dokumen MoU Anda ke sini untuk mulai mengunggah</p>
+                <p>— OR —</p>
+                <button type="button" class="browse-btn">Browse files</button>
+            </div>
+
+            <button type="submit" class="submit-btn">Kirim Sekarang</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Pop-up konfirmasi -->
+    <div class="success-popup" id="successPopup">
+        <div class="popup-content">
+            <div class="check-icon">✔️</div>
+            <h2>Pengajuan Terkirim!</h2>
+            <p>Formulir pengajuan Media Partner kamu sudah berhasil dikirim.<br>
+            Tim kami akan segera melakukan verifikasi.</p>
+            <button id="closePopup">Kembali</button>
+        </div>
+    </div>
+
+
+    <!-- Pop-up gagal -->
+    <div class="error-popup" id="errorPopup">
+        <div class="popup-content">
+            <div class="error-icon">❌</div>
+            <h2>Pengajuan Gagal!</h2>
+            <p>Maaf, terjadi kesalahan saat mengirim formulir.<br>
+            Silakan coba lagi atau hubungi tim kami.</p>
+            <button id="closeErrorPopup">Tutup</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js//kerjasama.js"></script>
+</body>
+</html>
