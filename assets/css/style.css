@@ -633,9 +633,11 @@ nav ul li a:hover {
 
 /* start footer */
 /* =============== section Footer ================ */
+
 footer {
 	background: linear-gradient(92deg,rgba(37, 38, 66, 1) 7%, rgba(55, 58, 140, 1) 93%);
 	color: white;
+  font-family: 'Figtree', sans-serif;
   }
   
   .footer-container {
